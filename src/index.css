@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+}
+body::-webkit-scrollbar {
+  /*Makes scrollbars invisible*/
+  display: none;
+}
+body,
+.master-section {
+  position: absolute;
+  height: 100%;
+  background: hsl(212, 100%, 91%);
+}
+
+/*WELCOMING SECTION*/
+
+.welcoming-section {
+  width: 100vw;
+  height: 100vw;
+}
+.upper-section {
+  width: 100vw;
+  height: 27vw;
+  display: flex;
+}
+.title-container {
+  margin: 2vw 0 2vw 4vw;
+  width: 56vw;
+  height: 25vw;
+  background-color: #b3ff66;
+}
+.model_3D-container {
+  width: 30vw;
+  height: 30vw;
+  margin: 2vw 0 2vw 5vw;
+  background-color: #ff6666;
+}
+.bottom-section {
+  position: relative;
+  margin-top: 1vw;
+  width: 100vw;
+  height: 20vw;
+  position: relative;
+}
+.scroll-arrow-container {
+  position: absolute;
+  margin: 1vw;
+  top: 0;
+  left: 47%;
+  width: 7vw;
+  height: 7vw;
+  background-color: #4b1c1c;
+}
+.seawaves-container {
+  position: absolute;
+  margin-right: 2vw;
+  top: 50%;
+  left: 0;
+  padding-left: 0;
+  width: 100vw;
+  height: 10vw;
+  background-color: #ff6666;
+}
