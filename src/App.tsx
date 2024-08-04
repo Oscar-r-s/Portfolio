@@ -1,5 +1,5 @@
 import "./index.css";
-import Title from "./Components/Title";
+import Title from "./Components/Title/Title";
 import Model_3D from "./Components/Model_3D";
 import Scroll_Arrow from "./Components/Scroll_Arrow";
 import Seawaves from "./Components/Seawaves";
