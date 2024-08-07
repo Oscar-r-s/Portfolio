@@ -5,6 +5,7 @@
   --title-font: "Monoton";
   --title-size: 5vw;
   --title-color: whitesmoke;
+  --page-background: rgb(15, 15, 15);
 }
 
 body {
@@ -22,12 +23,24 @@ body,
   background: hsl(212, 100%, 91%);
 }
 
+@keyframes floater {
+  0% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
+}
+
 /*WELCOMING SECTION*/
 
 .welcoming-section {
   width: 100vw;
   height: 48vw;
-  background-color: #333;
+  background-color: var(--page-background);
 }
 .upper-section {
   width: 100vw;
@@ -72,7 +85,7 @@ body,
   width: 3vw;
   height: 3vw;
   border-radius: 50%;
-  background-color: rgb(0, 0, 0);
+  background-color: #333;
   top: 15%;
   left: 25%;
   border: 1vw solid #8a9648; /*Eye's Iris*/
@@ -84,11 +97,18 @@ body,
   margin-left: 3vw;
   margin-top: -5vw; /*Negative margin so that the last name is closer to the name*/
 }
-.model_3D-container {
+.model-container {
   width: 25vw;
   height: 25vw;
   margin: 2vw 0 2vw -4vw;
-  background-color: #ff6666;
+}
+.ChessKnight {
+  width: 200%;
+  height: 200%;
+  object-fit: contain;
+  margin-left: -12vw;
+  margin-top: -15vw;
+  animation: floater 3s ease-in-out infinite;
 }
 .bottom-section {
   position: relative;
@@ -101,7 +121,7 @@ body,
   position: absolute;
   margin: 1vw;
   top: 0;
-  left: 47%;
+  left: 45%;
   width: 7vw;
   height: 7vw;
   background-color: #ff6666;
