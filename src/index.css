@@ -1,40 +1,99 @@
 :root {
   /*GENERAL VARIABLES WHICH CAN BE ACCESSED THROUGHOUT THE WHOLE STYLESHEET*/
-  --section-color: #0050ef;
-  --container: #b3ff66;
   --special-font: "Libre Baskerville";
   --main-font: "Fira Code";
   --content-font: "Open Sans";
-  --title-size: 3.5rem;
-  --page-background: rgb(15, 15, 15);
+  --color-1:#0f1016;
+  --text-color:#f0f0f0;
+  --accent-color: #006aff;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 html,
 body {
   width: 100%;
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 body::-webkit-scrollbar {
   /*Makes scrollbars invisible*/
   display: none;
 }
-
-.title-container {
-  font-family: var(--content-font);
-  font-size: var(--title-size);
-  text-align: center;
-  margin: 3.7rem;
+nav{
+  height: 60px;
+  background-color: var(--color-1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.links-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav a{
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+nav a:hover{
+  background-color: var(--accent-color);
+}
+nav .home-link{
+  margin-right: auto;
+}
+nav svg{
+  fill: var(--text-color);
+}
+#sidebar-active{
+  display: none;
+}
+.open-sidebar-button, .close-sidebar-button{
+  display: none;
 }
 
-@keyframes floater {
-  0% {
-    transform: translateY(-5%);
+@media (max-width: 450px){
+  .links-container{
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    width: 200px;
+    background-color: var(--color-1);
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    transition: 0.75s ease-out;
   }
-  50% {
-    transform: translateY(5%);
+  nav a{
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
   }
-  100% {
-    transform: translateY(-5%);
+  .open-sidebar-button, .close-sidebar-button{
+    display: block;
+    padding: 0 20px;
+  }
+  #sidebar-active:checked ~ .links-container{
+    right: 0;
+  }
+  #sidebar-active:checked ~ #overlay{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
   }
 }

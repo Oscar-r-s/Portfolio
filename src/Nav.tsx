@@ -1,6 +1,6 @@
-type Props = {};
 
-function Nav({}: Props) {
+
+function Nav() {
   return (
     <nav className="navbar">
       <input type="checkbox" id="sidebar-active" />
@@ -15,6 +15,7 @@ function Nav({}: Props) {
           <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
         </svg>
       </label>
+      <label id="overlay" htmlFor="sidebar-active"></label>
       <div className="links-container">
         <label htmlFor="sidebar-active" className="close-sidebar-button">
           <svg
