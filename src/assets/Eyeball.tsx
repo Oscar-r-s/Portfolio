@@ -45,3 +45,26 @@ const Eyeball = ({}: Props) => {
 };
 
 export default Eyeball;
+
+/** STYLES   
+ .eye {
+  position: absolute;
+  margin-left: 3.75vw;
+  top: 5.5vw;
+  width: clamp(38px, 10vw, 192px);
+  border-radius: 50%;
+  text-align: center;
+  background-color: whitesmoke;
+  overflow: hidden;
+}
+.ball {
+  position: relative;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background-color: #333;
+  top: 15%;
+  left: 25%;
+  border: 1vw solid #8a9648; 
+}
+*/

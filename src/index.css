@@ -2,25 +2,29 @@
   /*GENERAL VARIABLES WHICH CAN BE ACCESSED THROUGHOUT THE WHOLE STYLESHEET*/
   --section-color: #0050ef;
   --container: #b3ff66;
-  --title-font: "Monoton";
-  --title-size: 5vw;
-  --title-color: whitesmoke;
+  --special-font: "Libre Baskerville";
+  --main-font: "Fira Code";
+  --content-font: "Open Sans";
+  --title-size: 3.5rem;
   --page-background: rgb(15, 15, 15);
 }
 
+html,
 body {
+  width: 100%;
+  height: 100%;
   margin: 0;
 }
 body::-webkit-scrollbar {
   /*Makes scrollbars invisible*/
   display: none;
 }
-body,
-.master-section {
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
-  background: hsl(212, 100%, 91%);
+
+.title-container {
+  font-family: var(--content-font);
+  font-size: var(--title-size);
+  text-align: center;
+  margin: 3.7rem;
 }
 
 @keyframes floater {
@@ -33,106 +37,4 @@ body,
   100% {
     transform: translateY(-5%);
   }
-}
-
-/*WELCOMING SECTION*/
-
-.welcoming-section {
-  width: 100vw;
-  height: 48vw;
-  background-color: var(--page-background);
-}
-.upper-section {
-  width: 100vw;
-  height: 27vw;
-  display: flex;
-}
-.title-container {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  margin: 2vw -25vw 2vw 25vw;
-  width: 56vw;
-  height: 25vw;
-  font-family: var(--title-font);
-  font-size: var(--title-size);
-  color: var(--title-color);
-  z-index: 1;
-}
-.title-name {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 50%;
-  margin-bottom: 0;
-}
-.title-last-name {
-  width: 100%;
-  height: 50%;
-}
-.eye {
-  position: absolute;
-  margin-left: 3.75vw;
-  top: 5.5vw;
-  width: clamp(38px, 10vw, 192px);
-  border-radius: 50%;
-  text-align: center;
-  background-color: whitesmoke;
-  overflow: hidden;
-}
-.ball {
-  position: relative;
-  width: 3vw;
-  height: 3vw;
-  border-radius: 50%;
-  background-color: #333;
-  top: 15%;
-  left: 25%;
-  border: 1vw solid #8a9648; /*Eye's Iris*/
-}
-.name {
-  margin-left: 25%;
-}
-.last-name {
-  margin-left: 3vw;
-  margin-top: -5vw; /*Negative margin so that the last name is closer to the name*/
-}
-.model-container {
-  width: 25vw;
-  height: 25vw;
-  margin: 2vw 0 2vw -4vw;
-}
-.ChessKnight {
-  width: 200%;
-  height: 200%;
-  object-fit: contain;
-  margin-left: -12vw;
-  margin-top: -15vw;
-  animation: floater 3s ease-in-out infinite;
-}
-.bottom-section {
-  position: relative;
-  margin-top: 1vw;
-  width: 100vw;
-  height: 20vw;
-  position: relative;
-}
-.scroll-arrow-container {
-  position: absolute;
-  margin: 1vw;
-  top: 0;
-  left: 45%;
-  width: 7vw;
-  height: 7vw;
-  background-color: #ff6666;
-}
-.seawaves-container {
-  position: absolute;
-  margin-right: 2vw;
-  top: 50%;
-  left: 0;
-  padding-left: 0;
-  width: 100vw;
-  height: 10vw;
-  background-color: #ff6666;
 }
