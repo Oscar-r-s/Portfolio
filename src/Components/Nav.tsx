@@ -28,7 +28,7 @@ function Nav() {
             </svg>
           </label>
           <a className="home-link" href="#">
-            Home
+            <p>Oscar Rodriguez</p>
           </a>
           <a href="#">About</a>
           <a href="#">Products</a>
