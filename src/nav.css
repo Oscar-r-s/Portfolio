@@ -7,13 +7,12 @@
 .navbar {
   width: 750px;
   height: 60px;
-  background-color: var(--dark5);
+  background-color: var(--dark2);
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin: 10px;
   margin-top: 20px;
-
   border-radius: 50px;
 }
 .links-container {
@@ -29,16 +28,21 @@ nav a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: var(--clear5);
+  color: var(--accent1);
+  font-size: 20px;
+  font-weight: 500;
 }
 nav a:hover {
-  color: var(--clear1);
+  color: var(--accent3);
 }
 nav .home-link {
   margin-right: auto;
 }
-nav svg {
-  fill: var(--clear1);
+nav .open-sidebar-button svg {
+  fill: var(--accent2);
+}
+nav .close-sidebar-button svg {
+  fill: var(--accent3);
 }
 #sidebar-active {
   display: none;
@@ -48,7 +52,7 @@ nav svg {
   display: none;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 735px) {
   .links-container {
     width: 100%;
     top: -100%;
@@ -68,9 +72,13 @@ nav svg {
     padding-left: 70px;
     margin-bottom: 20px;
     justify-content: flex-start;
-    color: var(--clear5);
+    color: var(--accent1);
     font-family: var(--special-font);
     font-size: 2em;
+  }
+  nav a:hover {
+    color: var(--accent3);
+    font-weight: 600;
   }
   .open-sidebar-button,
   .close-sidebar-button {
