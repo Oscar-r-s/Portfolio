@@ -1,7 +1,11 @@
 type Props = {};
 
 function Title({}: Props) {
-  return <div className="title-container">Oscar Rodriguez</div>;
+  return (
+    <div className="title-container">
+      <div className="title hidden">I make websites</div>
+    </div>
+  );
 }
 
 export default Title;
