@@ -4,9 +4,11 @@ import Title from "./Components/Title";
 
 function App() {
   return (
-    <div id="master-section">
-      <Nav></Nav>
-      <Title></Title>
+    <div className="master-section">
+      <div className="content-section">
+        <Nav></Nav>
+        <Title></Title>
+      </div>
     </div>
   );
 }
