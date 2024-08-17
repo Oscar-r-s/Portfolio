@@ -5,7 +5,7 @@
   align-items: center;
 }
 .navbar {
-  width: 1000px;
+  width: 1500px;
   height: 40px;
   background-color: var(--dark3);
   display: flex;

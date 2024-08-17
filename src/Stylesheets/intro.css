@@ -1,0 +1,31 @@
+.intro-container {
+  width: 100%;
+  margin: 0;
+  margin-top: 500px;
+  text-align: left;
+}
+@keyframes showup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.intro {
+  /**DEBUGGING**/
+  /**DEBUGGING**/
+  margin: 300px;
+  font-size: var(--desktop-subtitle-size);
+  color: var(--clear5);
+  animation: showup 7s ease forwards;
+}
+
+@media (max-width: 735px) {
+  .intro {
+    margin: 40px;
+    margin-top: -250px;
+    margin-bottom: 0;
+    font-size: var(--mobile-subtitle-size);
+  }
+}

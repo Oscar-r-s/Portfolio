@@ -9,19 +9,10 @@ function Title({}: Props) {
       text2: document.getElementById("text2"),
     };
 
-    const texts: string[] = [
-      "My",
-      "name",
-      "is",
-      "Oscar",
-      "and",
-      "I",
-      "make",
-      "websites",
-    ];
+    const texts: string[] = ["I", "make", "websites"];
 
     const morphTime: number = 1;
-    const cooldownTime: number = 0.25;
+    const cooldownTime: number = 1;
 
     let textIndex: number = texts.length - 1;
     let time: Date = new Date();
