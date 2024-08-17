@@ -55,7 +55,7 @@ nav .close-sidebar-button svg {
 @media (max-width: 735px) {
   .links-container {
     width: 100%;
-    top: -100%;
+    top: -99%;
     right: 0px;
     margin-right: 0;
     flex-direction: column;
