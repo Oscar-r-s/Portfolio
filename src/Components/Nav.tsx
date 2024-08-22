@@ -34,16 +34,16 @@ function Nav() {
           >
             <p>Oscar Rodriguez</p>
           </a>
-          <a target="_blank" href="/inProcess.html">
+          <a target="_blank" href="/inProcess">
             About
           </a>
-          <a target="_blank" href="/inProcess.html">
+          <a target="_blank" href="/inProcess">
             Products
           </a>
-          <a target="_blank" href="/inProcess.html">
+          <a target="_blank" href="/inProcess">
             Blog
           </a>
-          <a target="_blank" href="/inProcess.html">
+          <a target="_blank" href="/inProcess">
             Login
           </a>
         </div>
