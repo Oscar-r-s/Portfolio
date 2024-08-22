@@ -34,16 +34,16 @@ function Nav() {
           >
             <p>Oscar Rodriguez</p>
           </a>
-          <a target="_blank" href="/https://oscar-r-s.github.io/">
+          <a target="_blank" href="https://oscar-r-s.github.io/">
             About
           </a>
-          <a target="_blank" href="/https://oscar-r-s.github.io/">
+          <a target="_blank" href="https://oscar-r-s.github.io/">
             Products
           </a>
-          <a target="_blank" href="/https://oscar-r-s.github.io/">
+          <a target="_blank" href="https://oscar-r-s.github.io/">
             Blog
           </a>
-          <a target="_blank" href="/https://oscar-r-s.github.io/">
+          <a target="_blank" href="https://oscar-r-s.github.io/">
             Login
           </a>
         </div>
