@@ -4,8 +4,14 @@ function Intro({}: Props) {
   return (
     <div className="intro-container">
       <div className="intro">
-        Hi there ! My name is Oscar and I am a student aiming to become a
-        software engineer
+        <p>
+          Hey ! I'm Oscar — student during the day, web developer by passion
+        </p>
+      </div>
+      <div className="scroll-indicator">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   );

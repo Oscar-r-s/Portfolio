@@ -4,8 +4,8 @@ import Intro from "./Components/Intro";
 
 function App() {
   return (
-    <div className="master-section">
-      <div className="welcome-section">
+    <div id="master-section">
+      <div id="welcome-section">
         <Nav></Nav>
         <Title></Title>
         <Intro></Intro>

@@ -1,31 +1,84 @@
 .intro-container {
+  position: relative;
   width: 100%;
   margin: 0;
-  margin-top: 500px;
   text-align: left;
-}
-@keyframes showup {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  bottom: 0;
 }
 .intro {
-  /**DEBUGGING**/
-  /**DEBUGGING**/
-  margin: 300px;
+  margin: 12rem;
   font-size: var(--desktop-subtitle-size);
   color: var(--clear5);
-  animation: showup 7s ease forwards;
+  margin-bottom: 0;
+}
+.scroll-indicator {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-indicator span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-bottom: 5px solid var(--accent1);
+  border-right: 5px solid var(--accent1);
+  transform: rotate(45deg);
+  margin: -5px;
+  animation: scroll 2s infinite;
 }
 
 @media (max-width: 735px) {
+  .intro-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+  }
   .intro {
-    margin: 40px;
-    margin-top: -250px;
-    margin-bottom: 0;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 0;
     font-size: var(--mobile-subtitle-size);
+  }
+  .scroll-indicator {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .scroll-indicator span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px solid var(--accent1);
+    border-right: 3px solid var(--accent1);
+    transform: rotate(-135deg);
+    margin: -5px;
+    animation: scroll 2s infinite;
+  }
+}
+.scroll-indicator span:nth-child(2) {
+  animation-delay: -0.1s;
+}
+.scroll-indicator span:nth-child(3) {
+  animation-delay: -0.2s;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
