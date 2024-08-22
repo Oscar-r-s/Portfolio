@@ -30,7 +30,7 @@ function Nav() {
           <a
             className="home-link"
             target="_blank"
-            href="../../public/inProcess.html"
+            href="https://github.com/Oscar-r-s"
           >
             <p>Oscar Rodriguez</p>
           </a>
