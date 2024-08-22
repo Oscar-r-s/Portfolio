@@ -1,0 +1,28 @@
+.subtitle-container {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  bottom: 0;
+}
+.subtitle {
+  margin: 12rem;
+  font-size: var(--desktop-subtitle-size);
+  color: var(--clear5);
+  margin-bottom: 0;
+}
+@media (max-width: 735px) {
+  .subtitle-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  .subtitle {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 0;
+    font-size: var(--mobile-subtitle-size);
+  }
+}

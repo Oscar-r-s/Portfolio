@@ -27,13 +27,21 @@ function Nav() {
               <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
             </svg>
           </label>
-          <a className="home-link" href="#">
+          <a className="home-link" target="_blank" href="inProcess.html">
             <p>Oscar Rodriguez</p>
           </a>
-          <a href="#">About</a>
-          <a href="#">Products</a>
-          <a href="#">Blog</a>
-          <a href="#">Login</a>
+          <a target="_blank" href="inProcess.html">
+            About
+          </a>
+          <a target="_blank" href="inProcess.html">
+            Products
+          </a>
+          <a target="_blank" href="inProcess.html">
+            Blog
+          </a>
+          <a target="_blank" href="inProcess.html">
+            Login
+          </a>
         </div>
       </nav>
     </div>

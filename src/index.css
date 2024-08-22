@@ -56,6 +56,15 @@ body::-webkit-scrollbar {
   height: 100vh;
 }
 
+/*Class which only takes care of centering the content inside it in x and y axis, using flex*/
+.center-items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*
 DEBUGGING
 */
