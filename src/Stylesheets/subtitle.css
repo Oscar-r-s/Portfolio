@@ -8,6 +8,7 @@
 .subtitle {
   margin: 12rem;
   font-size: var(--desktop-subtitle-size);
+  font-family: var(--main-font);
   color: var(--clear5);
   margin-bottom: 0;
 }
