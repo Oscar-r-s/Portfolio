@@ -10,10 +10,8 @@ function App() {
         <Nav></Nav>
         <Title></Title>
         <div className="intro-container">
-          <div className="intro-container">
-            <Subtitle text="Hey ! I'm Oscar — student during the day, web developer by passion"></Subtitle>
-            <Scrol_Indicator />
-          </div>
+          <Subtitle text="Hey ! I'm Oscar — student during the day, web developer by passion"></Subtitle>
+          <Scrol_Indicator />
         </div>
       </div>
     </div>
