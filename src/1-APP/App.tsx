@@ -1,3 +1,4 @@
+import Particles from "../Components/Particles";
 import Nav from "../Components/Nav";
 import Title from "../Components/Title";
 import Subtitle from "../Components/Subtitle";
@@ -6,6 +7,7 @@ import Scrol_Indicator from "../Components/Scrol_Indicator";
 function App() {
   return (
     <div id="master-section">
+      <Particles></Particles>
       <div id="welcome-section">
         <Nav></Nav>
         <Title></Title>

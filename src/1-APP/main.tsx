@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 //STYLES
 import "../index.css";
+import "../Stylesheets/Particles/particles.css";
 import "../Stylesheets/nav.css";
 import "../Stylesheets/title.css";
 import "../Stylesheets/subtitle.css";

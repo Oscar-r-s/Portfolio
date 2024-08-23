@@ -7,7 +7,7 @@
   --desktop-title-size: 7rem;
   --mobile-title-size: 60px;
   --desktop-subtitle-size: 3.5rem;
-  --mobile-subtitle-size: 35px;
+  --mobile-subtitle-size: 2rem;
   /*COLOR Dark*/
   --dark1: #4c4c4e;
   --dark2: #38383a;
@@ -63,6 +63,18 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/*
+GENERAL CLASSES
+*/
+
+.shadow {
+  box-shadow: inset -4px -4px 4px var(--accent1);
+}
+.shadow:hover {
+  box-shadow: inset -4px -4px 4px var(--accent4);
+  transition: 0.3s;
 }
 
 /*

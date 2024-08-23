@@ -1,7 +1,7 @@
 function Nav() {
   return (
     <div className="navbar-container">
-      <nav className="navbar">
+      <nav className="navbar shadow">
         <input type="checkbox" id="sidebar-active" />
         <label htmlFor="sidebar-active" className="open-sidebar-button">
           <svg
