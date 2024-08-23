@@ -1,4 +1,5 @@
 .title-container {
+  font-family: var(--special-font);
   width: 100%;
   height: 110px;
   /*Needed for the blur effect*/

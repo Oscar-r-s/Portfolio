@@ -1,5 +1,6 @@
 .navbar-container {
   margin: 0 auto;
+  font-family: var(--special-font);
   display: flex;
   justify-content: center;
   align-items: center;
